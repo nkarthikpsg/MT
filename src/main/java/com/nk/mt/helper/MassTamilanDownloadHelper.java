@@ -36,7 +36,7 @@ public class MassTamilanDownloadHelper
     {
         Properties properties = new Properties();
 
-        properties.load(this.getClass().getResourceAsStream("download_preferences.properties"));
+        properties.load(this.getClass().getResourceAsStream("/download_preferences.properties"));
 
         String csv = FileUtils.readFileToString(new File(properties.getProperty("in")), Charset.defaultCharset());
 
